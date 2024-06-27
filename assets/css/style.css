@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* global css start here */
+html{
+    font-size: 16px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Archivo", sans-serif;
+}
+
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Archivo", sans-serif;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+img {
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.4;
+}
+/* .pt-30{
+    padding-top: 30px;
+}
+.pb-30{
+    padding-bottom: 30px;
+}
+.ptb-30{
+    padding: 30px 0;
+} */
+.pt-50 {
+    padding-top: 50px ;
+}
+.pb-50 {
+    padding-bottom: 50px;
+}
+.ptb-50 {
+    padding: 50px 0;
+}
+.pb-70 {
+    padding-bottom: 70px;
+}
+.ptb-70 {
+    padding: 70px 0;
+}
+/* global css end here */
+
+
+
+/* header css start */
+.site-header{
+    background-color: #fff;
+}
+
+.site-logo img {
+    max-width: 200px;
+}
+.site-header nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 0;
+}
+.main-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-nav ul li{
+    padding: 0 20px;
+}
+.main-nav ul li a{
+    font-size: 1.125rem;
+    color: #000;
+    position: relative;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.main-nav ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    width: 0%;
+    height: 2px;
+    background-color: #ff8400;
+    transition: all 0.3s linear;
+
+}
+.main-nav ul li a:hover, .main-nav ul li a.active{
+    color: #ff8400;
+}
+.main-nav ul li a:hover::before, .main-nav ul li a.active::before {
+width: 100%;
+}
+.site-header.fixed-header {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.sub-menu ul {
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+}
+.sub-menu ul li{
+    padding: 7px 0;
+}
+.sub-menu ul li a{
+    color: #fff;
+    font-size: 1rem;
+}
+.menuToggle{
+    position: relative;
+    transition: all 0.3s linear;
+
+}
+.sub-menu {
+    background: #007bff;
+    padding: 20px 25px;
+    position: absolute;
+    z-index: 9;
+    width: 250px;
+    display: none;
+    transition: all 0.3s linear;
+}
+.menuToggle:hover .sub-menu, .sub-menu:hover{
+    display: block;
+    transition: all 0.3s linear;
+
+}
+/* header css end  */
+
+
+
+
+/* banner css start  */
+.site-banner{
+    background-image: url(../images/banner.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+    position: relative;
+}
+.banner-wrap{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.banner-txt{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.banner-txt h1{
+    font-size: 3.75rem;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.close, .toggle{
+    display: none;
+}
+/* banner css end */
+
+/* about us css start  */
+.about-text {
+    padding: 30px;
+}
+.about-text p {
+    font-size: 1.125;
+    color: #000000;
+}
+.about-img{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.about-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.3s linear;
+}
+.about-img:hover img{
+    transform: scale(1.3);
+
+}
+/* about us css end */
+/* link card css start  */
+.links-card{
+    width: 33%;
+    position: relative;
+}
+.link-img {
+    height: 400px;
+    width: 100%;
+}
+.link-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.link-txt h4 {
+    font-size: 1.875rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+.link-txt {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    right: 0;
+    z-index: 99;
+    transform: translateY(-50%);
+}
+.link-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+.links-card a{
+    position: relative;
+}
+.links-card a::before, .links-card a::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    z-index: 9;
+    opacity: 0.4;
+    transition: all 0.3s linear;
+
+}
+.links-card a::after{
+    height: 0;
+}
+.links-card:hover a::after{
+height: 100%;
+}
+/* link card css end */
+
+/* BLEIBEN page css start  */
+.site-banner.sub-banner {
+    height: 50vh;
+}
+.site-banner.sub-banner h1 {
+    font-size: 2.8rem;
+}
+.top-text p {
+    font-size: 1rem;
+    text-align: center;
+}
+.bleiben-card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 15px;
+    border: 5px solid #a2a3a43b;
+height: 100%;
+transition: box-shadow 0.2s ease, transform 0.2s ease;
+position: relative;
+
+}
+.bleiben-card:hover{
+    box-shadow: 0 34px 32px -33px rgba(0, 0, 0, .18);
+    transform: translate(0px, -3px);
+}
+.bleiben-card:hover img{
+    transform: scale(1.05) rotate(1deg);
+}
+
+.bleiben-img {
+    height: 250px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+.bleiben-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+.bleiben-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    line-height: 1.1;
+    font-weight: 600;
+    color: #000;
+}
+.bleiben-text p{
+    font-size: 1rem;
+    word-break: break-all;
+}
+.bleiben-text a{
+    font-size: 0.875rem;
+    padding: 12px 30px;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    color: #fff;
+    display: inline-block;
+    margin-top: 10px;
+    transition: all 0.3s linear;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+ 
+}
+.bleiben-text a:hover{
+    background-color: #ff8400;
+    border-color: #ff8400;
+}
+.Sehen-main .bleiben-text{
+    padding-bottom: 0;
+}
+.bleiben-text {
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.casino-name p{
+    margin-bottom: 10px;
+    font-style: italic;
+}
+.casino-main .col-lg-4, .casino-main .col-lg-6{
+    margin-bottom: 25px;
+}
+.bleiben-main .col-lg-4, .bleiben-main .col-lg-6 {
+    margin-bottom: 25px;
+}
+.bottom-text  p{
+    text-align: center;
+    font-size: 1rem;
+}
+.casino-main .bleiben-img {
+    height: 300px;
+}
+.contact-text p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.contact-text {
+    text-align: center;
+    margin: 20px 0;
+}
+.contact-main .row {
+    justify-content: center;
+}
+/* BLEIBEN page css end */
+
+
+/* footer section css start */
+.site-footer{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.footer-logo img {
+    max-width: 250px;
+}
+.social-links li a {
+    font-size: 1.25rem;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #007bff;
+    transition: all 0.3s linear;
+}
+.social-links li a:hover{
+    background-color: #ff8400;
+    border-color: #ff8400;
+}
+.social-links ul{
+    display: flex;
+    align-items: center;
+}
+.social-links ul li{
+    padding-right: 30px;
+}
+.footer-logo {
+    margin-bottom: 30px;
+}
+.footer-heading h4 {
+    font-size: 1.5625rem;
+    font-weight: 700;
+    color: #000;
+}
+.footer-heading {
+    margin-bottom: 30px;
+}
+.footer-links ul li a {
+    font-size: 1rem;
+    color: #000;
+    font-weight: 500;
+    transition: all 0.3s linear;
+
+}
+.footer-links ul li a:hover{
+    color: #ff8400;
+}
+.footer-links ul li{
+    padding: 5px 0;
+}
+.copy-right p{
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+.copy-right{
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+/* footer section css end */

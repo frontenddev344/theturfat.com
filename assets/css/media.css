@@ -1,0 +1,194 @@
+@media(max-width:1200px){
+    html{
+        font-size: 15px;
+    }
+    
+}
+@media(max-width:1024px){
+    .footer-logo img {
+        max-width: 200px;
+    }
+    .social-links li a {
+        height: 45px;
+        width: 45px;
+    }
+    .footer-heading {
+        margin-bottom: 20px;
+    }
+    .about-text {
+        padding: 20px;
+    }
+}
+
+@media(max-width:992px){
+    .close, .toggle{
+        display: block;
+        font-size: 25px;
+        color: #000;
+    }
+    .close{
+        font-size: 20px;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+    .main-nav ul {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .main-nav ul li {
+        padding: 1rem 0;
+    }
+    .main-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        height: 100vh;
+        z-index: 9;
+        width: 400px;
+        padding: 50px;
+        transform: translateX(-100%);
+        transition: all 0.3s linear;
+}
+    .menuToggle .main-nav{
+        transform: translateX(0%);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .banner-txt h1 {
+        font-size: 3.20rem;
+    }
+ 
+    .sub-menu {
+        padding: 0px 15px;
+    }
+    .site-footer .col-lg-3 {
+        margin: 15px 0;
+    }
+}
+
+
+@media(max-width:850px){
+    
+    .about-us .row {
+        flex-direction: column;
+    }
+    .about-us .row .col-md-5, .about-us .row .col-md-7{
+        width: 100%;
+    } 
+    .about-img {
+        height: 400px;
+        margin-bottom: 20px;
+    }
+  
+    .link-img {
+        height: 350px;
+    }
+    .link-wrap {
+        flex-direction: column;
+    }
+    .links-card {
+        width: 100%;
+    }
+    .ptb-70 {
+        padding: 50px 0;
+    }
+    .ptb-50 {
+        padding: 30px 0;
+    }
+    .site-banner {
+        height: 60vh;
+    }
+    .site-banner.sub-banner {
+        height: 40vh;
+    }
+    .site-banner.sub-banner h1 {
+        font-size: 2.5rem;
+    }
+    .banner-txt h1 {
+        font-size: 3rem;
+    }
+    .site-logo img {
+        max-width: 170px;
+    }
+}
+@media(max-width:767px){
+    html{
+        font-size: 14px;
+    }
+    
+   
+    .site-heading h2 {
+        font-size: 2.2rem;
+    }
+    .casino-main .bleiben-img {
+        height: 250px;
+    }
+    .container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+    .footer-heading {
+        margin-bottom: 10px;
+    }
+    .site-footer .col-lg-3 {
+        margin: 10px 0;
+    }
+    .about-text {
+        padding: 0px;
+    }
+    .link-img {
+        height: 280px;
+    }
+    .about-img {
+        height: 350px;
+    }
+}
+@media(max-width:575px){
+ 
+    .main-nav {
+        width: 100%;
+    }
+    .banner-txt {
+        padding: 0 20px;
+    }
+    .banner-txt h1 {
+        font-size: 3rem;
+        word-break: break-word;
+        line-height: 1.1;
+    }
+    .bleiben-card {
+        padding: 10px;
+        border: 3px solid #a2a3a43b;
+}
+.bleiben-text a {
+    padding: 10px 25px;
+    bottom: 10px;
+    left: 10px;
+}
+.site-logo img {
+    max-width: 150px;
+}
+.footer-logo img {
+    max-width: 170px;
+}
+.social-links ul li {
+    padding-right: 20px;
+}
+.social-links li a {
+    height: 40px;
+    width: 40px;
+}
+}
+@media(max-width:375px){
+  html{
+    font-size: 13px;
+  }
+  .about-img {
+    height: 300px;
+}
+
+}
